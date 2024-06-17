@@ -32,7 +32,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="js/scriptv2.js" defer></script>
+    <script src="js/script.js" defer></script>
     <style>
       #spinner {
         display: none;
@@ -62,30 +62,30 @@
               name="input_aimag"
               id="input_aimag"
             >
-              <option value="ШШЕГ">ШШЕГ</option>
-              <option value="Архангай">Архангай</option>
-              <option value="Баянхонгор">Баянхонгор</option>
-              <option value="Баян-Өлгий">Баян-Өлгий</option>
-              <option value="Булган">Булган</option>
-              <option value="Говь-Алтай">Говь-Алтай</option>
-              <option value="Говьсүмбэр">Говьсүмбэр</option>
-              <option value="Дархан-Уул">Дархан-Уул</option>
-              <option value="Дорнод">Дорнод</option>
-              <option value="Дорноговь">Дорноговь</option>
-              <option value="Дундговь">Дундговь</option>
-              <option value="Завхан">Завхан</option>
-              <option value="Орхон">Орхон</option>
-              <option value="Өвөрхангай">Өвөрхангай</option>
-              <option value="Өмнөговь">Өмнөговь</option>
-              <option value="Сүхбаатар">Сүхбаатар</option>
-              <option value="Сэлэнгэ">Сэлэнгэ</option>
-              <option value="Төв">Төв</option>
-              <option value="Увс">Увс</option>
-              <option value="Ховд">Ховд</option>
-              <option value="Хөвсгөл">Хөвсгөл</option>
-              <option value="Хэнтий">Хэнтий</option>
-              <option value="Налайх">Налайх</option>
-              <option value="Багануур">Багануур</option>
+              <option value="SHSH">ШШЕГ</option>
+              <option value="Baganuur">Багануур</option>
+              <option value="Nalaikh">Налайх</option>
+              <option value="Arkhangai">Архангай</option>
+              <option value="Baynkhongor">Баянхонгор</option>
+              <option value="Ulgii">Баян-Өлгий</option>
+              <option value="Bulgan">Булган</option>
+              <option value="Altai">Говь-Алтай</option>
+              <option value="Sumber">Говьсүмбэр</option>
+              <option value="Darkhan">Дархан-Уул</option>
+              <option value="Dornod">Дорнод</option>
+              <option value="Dornogovi">Дорноговь</option>
+              <option value="Dundgovi">Дундговь</option>
+              <option value="Zavhan">Завхан</option>
+              <option value="Orkhon">Орхон</option>
+              <option value="Uvurkhangai">Өвөрхангай</option>
+              <option value="Umnugovi">Өмнөговь</option>
+              <option value="Sukhbaatar">Сүхбаатар</option>
+              <option value="Selenge">Сэлэнгэ</option>
+              <option value="Tuv">Төв</option>
+              <option value="Uvs">Увс</option>
+              <option value="Hovd">Ховд</option>
+              <option value="Huvs">Хөвсгөл</option>
+              <option value="Hentii">Хэнтий</option>
             </select>
             <input
               id="input_id"
@@ -102,20 +102,22 @@
               name="input_option"
               id="input_option"
             >
-              <option value="Галт зэвсэг">Галт зэвсэг</option>
-              <option value="Мөр судлал">Мөр судлал</option>
-              <option value="Бичиг судлал">Бичиг судлал</option>
-              <option value="Материал судлал">Материал судлал</option>
-              <option value="Цахим">Цахим</option>
-              <option value="Авто">Авто</option>
-              <option value="Экологи">Экологи</option>
-              <option value="Биологи">Биологи</option>
-              <option value="ДНХ">ДНХ</option>
-              <option value="Бактериологи">Бактериологи</option>
-              <option value="Хими">Хими</option>
-              <option value="Физик">Физик</option>
-              <option value="Эдийн засаг">Эдийн засаг</option>
-              <option value="Хавтаст хэрэг">Хавтаст хэрэг</option>
+              <option value="Galt">Галт зэвсэг</option>
+              <option value="Gar">Гарын мөр судлал</option>
+              <option value="Mur">Мөр судлал</option>
+              <option value="Bichig">Бичиг судлал</option>
+              <option value="Material">Материал судлал</option>
+              <option value="Tsahim">Цахим</option>
+              <option value="Avto">Авто</option>
+              <option value="Ecology">Экологи</option>
+              <option value="Biology">Биологи</option>
+              <option value="DNA">ДНХ</option>
+              <option value="Gist">Гистологи</option>
+              <option value="Bact">Бактериологи</option>
+              <option value="Himi">Хими</option>
+              <option value="Pizik">Физик</option>
+              <option value="Ediin">Эдийн засаг</option>
+              <option value="Anagaah">Шүүх анагаах ухаан</option>
             </select>
             <input
               id="input_tom"
@@ -189,14 +191,9 @@
           <span class="sr-only">Loading...</span>
         </div>
 
-        <div
-          class="flex flex-row align-center justify-center m-auto"
-          style="height: 200; width: auto"
-          id="print"
-        >
-          <form class="flex flex-row">
+        <div class="flex align-center justify-center m-auto" id="print">
+          <form>
             <div id="qrcode" class="m-auto"></div>
-            <div id="burtgel" class="flex flex-col pl-10"></div>
           </form>
         </div>
         <input
